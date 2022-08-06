@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    
+
+    <!-- Header Section -->
+    <header class="header">
+      
+
+
+    <div class=" header__content container">
+      <!-- Hamburger menu icon -->
+      <nav class="header__navbar" >
+        
+        <!-- Logo -->
+        <img class="header__logo" src="images/logo.png" alt="logo image of mountain" />
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="header__ul">
+          <li class="header__li first_li" ><a class="header__a" href="#home" accesskey="h" >Home</a></li>
+          <li class="header__li" ><a class="header__a" href="#about" accesskey="a" >About</a></li>
+          <li class="header__li" ><a class="header__a" href="#work" accesskey="w" >Work</a></li>
+          <li class="header__li last_li" ><a class="header__a" href="#contact" accesskey="c" >Contact</a></li>
+        </ul>
+        <!-- AccessKeys h a w c r s-->
+      </nav>
+
+    </div>
+    </header>
+    <div class="container">
+
+
+    <!-- Banner Section -->
+    <div class="banner">
+      <!-- Background Image of Mountain -->
+      <h1 class="banner__heading">Hey I am John</h1>
+      <h4 class="banner__sub-heading">a web developer</h4>
+    </div>
+
+    
+      <!-- About us section -->
+      <div class="about-us" id="about">
+        <div>
+          <h1 class="about-us__heading">About Us</h1>
+        </div>
+
+        <div class="about-us__content" >
+          <p class="about-us__description" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quam dolor ipsum, asperiores reprehenderit amet error dolorum harum
+            dolores dignissimos quis recusandae, et ipsam voluptatum pariatur
+            vitae quisquam unde? Nesciunt.
+            <br />
+            <br />
+
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+          <br />
+
+          
+            <button class="about-us__btn" accesskey="r" >Read more</button>
+          
+          
+        </div>
+      </div>
+
+      
+
+      <div class="container-background-color">
+        <div class="projects" id="work" >
+            <h1 class="project__heading">
+                These are some of my projects
+            </h1>
+            <!-- Project Grid -->
+            <div class="projects__img-block">
+                <img src="images/assignment_05.jpg" alt="project-1 image" class="projects__img">
+                <img src="images/assignment_08.jpg" alt="project-2 image" class="projects__img">
+                <img src="images/assignment_10.jpg" alt="project-3 image" class="projects__img">
+                <img src="images/assignment_16.jpg" alt="project-4 image" class="projects__img">
+                <img src="images/assignment_17.jpg" alt="project-5 image" class="projects__img">
+                <img src="images/assignment_18.jpg" alt="project-6 image" class="projects__img">
+            </div>
+
+            <button class="projects__show-all-btn" accesskey="s">
+            SHOW ALL
+            </button>
+        </div>
+    </div>
+
+      <!-- Footer Section -->
+      <footer class="footer" id="contact" >
+        <h1 class="footer__heading">Let's work together...</h1>
+
+        <h4 class="footer__sub-heading">How do you take your coffee</h4>
+        <!-- Social Media Icons -->
+        <div class="footer__social-media">
+          <img 
+            src="images/facebook-icon.png" 
+            alt="connect on facebook" 
+            class="footer__logo" 
+          />
+          <img 
+            src="images/twitter-icon.png" 
+            alt="connect on twitter" 
+            class="footer__logo" 
+          />
+          <img
+            src="images/instagram-icon.png"
+            alt="connect on instagram"
+            class="footer_logo"
+          />
+        </div>
+      </footer>
+
+      <hr />
+
+      <!-- copyright -->
+      <div class="copyright">copyright @2022</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,419 @@
+/* Portfolio Project CSS */
+
+
+/* General Settings */
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat';
+    width:100%;
+}
+
+
+/* HEADER SECTION AND NAVIGATION  */
+
+.container{
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin:0 auto;
+    
+}
+.header{
+    position: sticky;
+    top:0;
+    background: white;
+    width:100%;
+    /* height: 162px; */
+}
+
+.header__logo{
+    font-size: 16px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* NAVBAR */
+.header__navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__ul{
+    float: right;
+    height: 100%;
+    margin:65px 0;
+}
+
+.header__li{
+    display: inline-block;
+    padding-right: 70px;
+    height: 11px;
+}
+
+.header__a{
+    color:black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+a:hover,a:focus{
+    color:blue;
+}
+
+
+
+/* Hamburger Menu  */
+.checkbtn{
+    color:black;
+    float: right;
+    margin-right:40px ;
+    cursor:pointer;
+    display: none;
+    padding:2px;
+    border:2px solid #333333;
+    border-radius: 5px;
+}
+
+#check{
+    display: none;
+}
+
+
+/* BANNER SECTION */
+.banner{
+    background-image: url("images/hero-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.banner__heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    color: #333333;
+    padding-bottom: 25px;
+    margin-top: 350px;
+}
+
+.banner__sub-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #333333;
+    padding-bottom: 350px;
+}
+
+
+/* ABOUT US SECTION */
+.about-us{
+    padding: 100px 0px;
+    display: flex;
+}
+
+.about-us__heading{
+    margin-right:220px;
+    font-size: 36px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.about-us__description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    font-weight: normal;
+}
+
+
+.about-us__btn{
+    font-family: 'Montserrat', sans-serif;
+   font-weight:500;
+   font-size: 16px;
+   color:#333333;
+   border:2px solid black; 
+   padding: 20px 40px;
+   border-radius: 4px;
+   text-transform: uppercase;
+   background-color: #ffffff;
+}
+
+
+
+/* PROJECT SECTION */
+.container-background-color{
+    background-color: #f7fbff;
+    width: 100vw;
+}
+
+.projects{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #333333;
+    padding-bottom: 50px;
+}
+
+/* Grid Layout of Project */
+.projects__img-block{
+    display: grid;
+    grid-template-columns: 366px 366px 366px;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 34px;
+    grid-row-gap: 34px ;
+    padding-bottom: 16px; 
+}
+
+.projects__show-all-btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    border: 2px solid #333333;
+    padding: 20px 40px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.projects__show-all-btn:hover {
+    background-color : #333333;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* FOOTER SECTION */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+footer h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #333333;
+    padding-bottom: 34px;
+    text-align: center;
+}
+
+.footer__sub-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #333333;
+    padding-bottom: 34px;
+    text-align: center;
+}
+
+.footer__social-media-logo{
+    padding-bottom: 100px;
+}
+
+.footer__logo{
+    margin:0 5px;
+}
+
+.horizontal-line{
+    border: 1px solid #f2f2f2;
+    width: inherit;
+}
+
+.copyright{
+    padding: 45px 0 ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:light;
+    font-size: 16px;
+    color: #333333;
+    width: 1170px;
+    margin-left: 375px;
+    margin-right: 375px;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (min-width:1188px) and (max-width:1300px)
+{
+    .header__ul{
+        margin-right: 187.5px;
+    }
+
+    .header__li{
+        margin-top: 5px;
+    }
+    .banner{
+        height:75vmin
+    }
+
+    .header__logo{
+        padding: 25px 0;
+        margin:auto 0px;
+        margin-left: 187.5px;
+        position: fixed;
+    }
+
+    .projects__img-block{
+        display: grid;
+        grid-template-columns: 366px 366px;
+        grid-column-gap: 34px;
+        grid-row-gap: 34px ;
+        padding-bottom: 50px;
+    }
+
+    .project__heading{
+        text-align: center;
+    }
+
+    .projects{
+        padding-top: 50px;
+    }
+
+    .projects__show-all-btn{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:1188px)
+{
+    .header{
+        position:sticky;
+        top:0;
+        background-color: white;
+
+    }
+
+    .header__logo{
+        margin-left: 30px;
+        padding: 25px 0;
+        margin-left: 30px;
+        
+    }
+
+    .checkbtn{
+        display: block;
+        margin:50px 0;
+        margin-right: 30px;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top:80px;
+        left:-100%;
+        transition: all .5s;
+        text-align: left;
+    }
+
+    .header__li{
+        display: block;
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    .header__a{
+        margin-left:30px;
+    }
+
+    #check:checked ~ul{    
+        background-color: white;
+        width: 100%;
+        top:60px;
+        height: 175px;
+        left:0;  
+    }
+
+    .banner__heading{
+        font-size: 9vw;
+        margin-top: 175px;
+
+    }
+
+    .banner__sub-heading{
+        font-size: 3.5vw;
+        padding-bottom: 175px;
+    }
+
+    .about-us{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-us__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us__heading{
+        margin:0 auto;
+        font-size: 36px;
+        padding-bottom:10px;
+        
+    }
+
+    .about-us__heading{
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        /* text-align: center; */
+        /* margin-right:auto;
+        margin-left:auto; */
+    }
+
+    .about-us__description{
+        text-align: center;
+        padding-bottom:20px;
+    }
+
+    
+
+    .project__heading{
+        text-align: center;
+    }
+
+    .projects__img-block{
+        /* padding:0 34px; */
+        grid-template-columns: 366px;
+
+    }
+
+    .copyright{
+        margin-left: 0;
+        margin-right:0;
+        display: flex;
+        justify-content: center ;
+        width:100vw;
+    }
+
+}
